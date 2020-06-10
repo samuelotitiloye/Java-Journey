@@ -1,6 +1,14 @@
 public class LeapYear {
-    public static int isLeapYear(int year){
-
+    public static boolean isLeapYear(int year) {
+         if (year >= 1 && year <= 9999 ) {
+             return true;// >= 1 && <= 9999;
+         }else if(year % 4 == 0) {
+             return true;
+         }else if(year % 100 == 0){
+             return true;
+         }else if(year % 400 == 0){
+             return false;
+         }
     }
 }
 
@@ -10,10 +18,12 @@ public class LeapYear {
 // Otherwise, if it is in the valid range, calculate if the year is a leap year and return true if it is a leap year, otherwise return false.
 
 // To determine whether a year is a leap year, follow these steps:
-// 1. If the year is evenly divisible by 4, go to step
-// 2. Otherwise, go to step 5.2. If the year is evenly divisible by 100, go to step
-// 3. Otherwise, go to step 4.3. If the year is evenly divisible by 400, go to step
-// 4. Otherwise, go to step 5.4. The year is a leap year (it has 366 days). The method isLeapYear needs to return true.
+
+// 1. If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+// 2. If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+// 3. If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+
+// 4. The year is a leap year (it has 366 days). The method isLeapYear needs to return true.
 // 5. The year is not a leap year (it has 365 days). The method isLeapYear needs to return false.
 
 // The following years are not leap years:
