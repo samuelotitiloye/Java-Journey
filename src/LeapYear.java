@@ -1,14 +1,32 @@
 public class LeapYear {
+
     public static boolean isLeapYear(int year) {
-         if (year >= 1 && year <= 9999 ) {
-             return true;// >= 1 && <= 9999;
-         }else if(year % 4 == 0) {
-             return true;
-         }else if(year % 100 == 0){
-             return true;
-         }else if(year % 400 == 0){
-             return false;
-         }
+//        if (year < 1 || year > 9999) {
+//            return false;// >= 1 && <= 9999;
+//        } else if (year % 4 == 0 && year % 100 != 0) { //
+//            return true;
+//        } else if (year % 100 == 0 && year % 400 != 0) {
+//            return false;
+//        } else if (year % 400 == 0){
+//            return true;
+//        }
+//        return false; //every path should be accounted for-return statement needed for boolean method
+//    }
+
+        // a much shorter and cleaner way to write the above code
+        if(year < 1 || year > 9999) {
+            return false;
+        }
+        if(year % 400 == 0){
+            return true;
+        }
+        if(year % 100 == 0){
+            return false;
+        }
+        if(year % 4 == 0 ){
+            return true;
+        }
+        return false;
     }
 }
 
