@@ -1,7 +1,8 @@
-# Java-Journey -> This repo tracks and documents my Java Learning Journey. The goal is to push every code exercise and challenges
-here so that I can look back and see my progress.
+# Java-Journey -> This repo tracks and documents my Java Learning Journey. 
+The goal is to push every code exercise and challenges
+here so as to gauge my progress.
 
-for this challenge, here is the acceptance criteria :
+For this challenge, here is the acceptance criteria :
 
 Write a method isLeapYear with a parameter of type int named year.
 The parameter needs to be greater than or equal to 1 and less than or equal to 9999.
