@@ -4,6 +4,7 @@ public class Main {
         System.out.println(LeapYear.isLeapYear(2017));
     }
 }
+//git repo name change
 // The following years are not leap years:
 // 1700, 1800, 1900, 2100, 2200, 2300, 2500, 2600
 // This is because they are evenly divisible by 100 but not by 400.
